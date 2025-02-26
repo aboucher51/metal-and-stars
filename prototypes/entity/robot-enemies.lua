@@ -82,7 +82,7 @@ data:extend({
         source_direction_count = 64,
         source_offset = {0, -3.423489 / 4},
         damage_modifier = 2,
-        ammo_category = "laser",
+        ammo_category = "metal-and-stars-hostile-bot-laser",
         ammo_type =
         {
           action =
