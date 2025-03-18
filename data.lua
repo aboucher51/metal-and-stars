@@ -1,3 +1,5 @@
+require("__metal-and-stars__.prototypes.categories.ammo-category")
+
 require("__metal-and-stars__.prototypes.dependency-updates.armoured-biter-updates")
 require("__metal-and-stars__.prototypes.dependency-updates.tenebris-updates")
 require("__metal-and-stars__.prototypes.dependency-updates.maraxsis-updates")
