@@ -1,6 +1,6 @@
 {
     "name": "metal-and-stars",
-    "version": "0.1.11",
+    "version": "0.1.12",
     "title": "Metal and Stars",
     "author": "5forSilver",
     "description": "It's a big universe out there, and there are other ways to leave the solar system. Several new destinations with new machines, technologies, and unique processes",
@@ -9,7 +9,7 @@
         "space-age >= 2.0.28",
         "base >= 2.0.28",
         "? quality",
-        "common-prototypes >= 0.0.2",
+        "common-prototypes >= 0.0.3",
         "metal-and-stars-graphics >= 0.0.4",
         "metal-and-stars-graphics-2 >= 0.0.3",
         "ArmouredBiters <= 1.2.1",
