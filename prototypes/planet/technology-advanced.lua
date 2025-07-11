@@ -36,7 +36,7 @@ data:extend({
             recipe = "overclock-module-2"
           }
         },
-        prerequisites = {"overclock-module", "processing-unit"},
+        prerequisites = {"overclock-module", "space-science-pack"},
         unit =
         {
           count = 200,
