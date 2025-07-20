@@ -6,6 +6,7 @@ Date: 07.20.2025
   Bugfixes:
     - moved Overclock module 2 to a more appropriate place in the research tree (thanks DFOXpro!)
     - slightly changed CN localization
+    - updating common-prototypes to include bugfix
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.14
 Date: 07.20.2025
