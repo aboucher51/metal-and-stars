@@ -3,6 +3,7 @@ require("__metal-and-stars__.prototypes.categories.ammo-category")
 require("__metal-and-stars__.prototypes.dependency-updates.armoured-biter-updates")
 require("__metal-and-stars__.prototypes.dependency-updates.tenebris-updates")
 require("__metal-and-stars__.prototypes.dependency-updates.maraxsis-updates")
+require("__metal-and-stars__.prototypes.dependency-updates.planet-lib-tiers")
 
 require("__metal-and-stars__.prototypes.planet.routes")
 require("__metal-and-stars__.prototypes.planet.shipyard.shipyard_planet")

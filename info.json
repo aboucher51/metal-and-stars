@@ -1,6 +1,6 @@
 {
     "name": "metal-and-stars",
-    "version": "0.1.13",
+    "version": "0.1.14",
     "title": "Metal and Stars",
     "author": "5forSilver",
     "description": "It's a big universe out there, and there are other ways to leave the solar system. Several new destinations with new machines, technologies, and unique processes",
@@ -13,7 +13,8 @@
         "metal-and-stars-graphics >= 0.0.4",
         "metal-and-stars-graphics-2 >= 0.0.3",
         "ArmouredBiters <= 1.2.1",
-        "PlanetsLib >= 1.6.2",
+        "PlanetsLib >= 1.7.4",
+        "PlanetsLibTiers >= 1.0.2",
         "? Starmap_Nexuz >= 1.0.0",
         "? Better_Starmap_Background >= 1.1.0",
         "? atan-nuclear-science",
