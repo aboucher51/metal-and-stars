@@ -2,7 +2,7 @@
 Version: 0.1.15
 Date: 07.20.2025
   Changes:
-    - Russian localization added
+    - Russian localization added (Thanks Jesusv09!)
   Bugfixes:
     - moved Overclock module 2 to a more appropriate place in the research tree (thanks DFOXpro!)
     - slightly changed CN localization
