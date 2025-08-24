@@ -3,7 +3,7 @@ local sounds = require("__base__.prototypes.entity.sounds")
 local asset_graphics = require("__metal-and-stars__.prototypes.entity.quantum-stabilizer-visuals")
 local meld = require("meld")
 
-local item_name = "quantum-stabilizer"
+local item_name = "ms-quantum-stabilizer"
 
 local building_entity = 
 {
@@ -22,7 +22,7 @@ local building_entity =
   energy_source = {
     type = "electric",
     usage_priority = "secondary-input",
-    emissions_per_minute = { pollution = 1 },
+    emissions_per_minute = { pollution = 1, gravitons = 10 },
   },
   effect_receiver = { base_effect = { productivity = 0.5 }},
   module_slots = 4,

@@ -48,6 +48,7 @@ require("__metal-and-stars__.prototypes.ammos")
 --require("__metal-and-stars__.prototypes.entity.accumulators") NYI
 require("__metal-and-stars__.prototypes.autoplace-controls")
 require("__metal-and-stars__.prototypes.units")
+require("__metal-and-stars__.prototypes.gravitons")
 require("__metal-and-stars__.prototypes.entity.asteroids.asteroid")
 require("__metal-and-stars__.prototypes.entity.asteroids.smoke")
 require("__metal-and-stars__.prototypes.entity.asteroids.explosions")

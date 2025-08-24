@@ -25,7 +25,7 @@ local machina = {
         ["magnetic-field"] = 0,
         pressure = 200,
         ["solar-power"] = 200,
-        ["local-electricity-grid"] = 30,
+        ["local-electricity-grid"] = 300,
         temperature = 268,
         gravity = 2
     },

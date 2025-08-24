@@ -73,7 +73,7 @@ local building_entity =
   {
     type = "electric",
     usage_priority = "secondary-input",
-    emissions_per_minute = { pollution = 4 }
+    emissions_per_minute = { pollution = 4, gravitons = 4 }
   },
   autoplace = {
     order = "a[landscape]-c[rock]-a[huge]",

@@ -1032,7 +1032,7 @@ data:extend({
 	},
   {
 		type = "recipe",
-		name = "quantum-stabilizer",
+		name = "ms-quantum-stabilizer",
     icon = "__metal-and-stars-graphics__/graphics/icons/quantum-stabilizer.png",
 		enabled = false,
     category = "nanotech",
@@ -1043,7 +1043,7 @@ data:extend({
       {type = "item", name = "neumann-conduit", amount = 1},
 		},
     allow_productivity = true,
-		results = {{type="item", name="quantum-stabilizer", amount=1}}
+		results = {{type="item", name="ms-quantum-stabilizer", amount=1}}
 	},
   {
 		type = "recipe",

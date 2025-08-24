@@ -9,7 +9,7 @@ local sounds = require ("__base__.prototypes.entity.sounds")
 local hit_effects = require ("__base__.prototypes.entity.hit-effects")
 local simulations = require("__base__.prototypes.factoriopedia-simulations")
 
-local make_unit_melee_ammo_type = function(damage_value)
+local make_unit_melee_ammo_type_explode = function(damage_value)
   return
   {
     target_type = "entity",
@@ -19,14 +19,20 @@ local make_unit_melee_ammo_type = function(damage_value)
       action_delivery =
       {
         type = "instant",
-        target_effects =
+        target_effects = 
         {
-          type = "damage",
-          damage = { amount = damage_value , type = "physical"}
+          {
+            type = "damage",
+            damage = { amount = damage_value , type = "physical"}
+          },
+          {
+            type = "create-explosion",
+            entity_name = "void-explosion"
+          }
         }
-      }
     }
   }
+}
 end
 local function jellyfish_animation(tint1)
   return
@@ -55,22 +61,25 @@ data:extend({
       order = "b-b-a",
       subgroup="enemies",
       healing_per_tick = 0.01,
-      collision_box = {{0, 0}, {0, 0}},
       selection_box = {{-0.4, -0.7}, {0.7, 0.4}},
+      collision_box = nil,
+      collision_mask = {
+         layers = {}
+      },
       attack_parameters =
       {
         type = "projectile",
         range = 0.5,
         cooldown = 35,
         ammo_category = "melee",
-        ammo_type = make_unit_melee_ammo_type(6),
+        ammo_type = make_unit_melee_ammo_type_explode(6),
         -- sound = make_biter_roars(0.5),
         animation = jellyfish_animation({200, 225, 255})
       },
       vision_distance = 30,
       movement_speed = 0.2,
       distance_per_frame = 0.1,
-      absorptions_to_join_attack = {pollution = 10},
+      absorptions_to_join_attack = {gravitons = 10},
       distraction_cooldown = 300,
       -- corpse = "small-biter-corpse",
       dying_explosion = "void-explosion",
@@ -121,10 +130,10 @@ data:extend({
     damaged_trigger_effect = hit_effects.biter(),
     impact_category = "organic",
     -- in ticks per 1 pu
-    absorptions_per_second = { pollution = { absolute = 20, proportional = 0.01 } },
+    absorptions_per_second = { gravitons = { absolute = 200, proportional = 0.01 } },
     -- corpse = "biter-spawner-corpse",
     -- dying_explosion = "biter-spawner-die",
-    max_count_of_owned_units = 7,
+    max_count_of_owned_units = 15,
     max_friends_around_to_spawn = 5,
     graphics_set =
     {
@@ -149,7 +158,7 @@ data:extend({
       {"glowing-jellyfish", {{0.0, 0.3}, {0.6, 0.0}}},
     },
     -- With zero evolution the spawn rate is 6 seconds, with max evolution it is 2.5 seconds
-    spawning_cooldown = {360, 150},
+    spawning_cooldown = {60, 60},
     spawning_radius = 10,
     spawning_spacing = 3,
     max_spawn_shift = 0,
@@ -157,60 +166,6 @@ data:extend({
     autoplace = machina_enemy_autoplace.nix_spawner_autoplace("nix_spawner", "b[enemy]-c[spawner]-b[small]"),
     call_for_help_radius = 50,
     time_to_capture = 60 * 20,
-    -- spawn_decorations_on_expansion = true,
-    -- spawn_decoration =
-    -- {
-    --   {
-    --     decorative = "light-mud-decal",
-    --     spawn_min = 0,
-    --     spawn_max = 2,
-    --     spawn_min_radius = 2,
-    --     spawn_max_radius = 5
-    --   },
-    --   {
-    --     decorative = "dark-mud-decal",
-    --     spawn_min = 0,
-    --     spawn_max = 3,
-    --     spawn_min_radius = 2,
-    --     spawn_max_radius = 6
-    --   },
-    --   {
-    --     decorative = "enemy-decal",
-    --     spawn_min = 3,
-    --     spawn_max = 5,
-    --     spawn_min_radius = 2,
-    --     spawn_max_radius = 7
-    --   },
-    --   {
-    --     decorative = "enemy-decal-transparent",
-    --     spawn_min = 4,
-    --     spawn_max = 20,
-    --     spawn_min_radius = 2,
-    --     spawn_max_radius = 14,
-    --     radius_curve = 0.9
-    --   },
-    --   {
-    --     decorative = "muddy-stump",
-    --     spawn_min = 2,
-    --     spawn_max = 5,
-    --     spawn_min_radius = 3,
-    --     spawn_max_radius = 6
-    --   },
-    --   {
-    --     decorative = "red-croton",
-    --     spawn_min = 2,
-    --     spawn_max = 8,
-    --     spawn_min_radius = 3,
-    --     spawn_max_radius = 6
-    --   },
-    --   {
-    --     decorative = "red-pita",
-    --     spawn_min = 1,
-    --     spawn_max = 5,
-    --     spawn_min_radius = 3,
-    --     spawn_max_radius = 6
-    --   }
-    -- }
   },
     {
     type = "explosion",

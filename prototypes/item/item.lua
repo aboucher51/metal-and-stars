@@ -6,7 +6,7 @@ local function instrument_sound(filename)
   return
   {
     filename = "__base__/sound/programmable-speaker/"..filename..".ogg",
-    volume = .7,
+    volume = .1,
     aggregation = {max_count = 1, remove = true},
   }
 end
@@ -1020,12 +1020,12 @@ data:extend({
       },
       {
         type = "item",
-        name = "quantum-stabilizer",
+        name = "ms-quantum-stabilizer",
         icon = "__metal-and-stars-graphics__/graphics/icons/quantum-stabilizer.png",
         icon_size = 64,
         subgroup = "production-machine",
         order = "d[hurricane]",
-        place_result = "quantum-stabilizer",
+        place_result = "ms-quantum-stabilizer",
         stack_size = 10,
       },
       {

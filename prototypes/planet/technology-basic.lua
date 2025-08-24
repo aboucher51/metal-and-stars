@@ -679,7 +679,7 @@ data:extend({
         {
           {
             type = "unlock-recipe",
-            recipe = "quantum-stabilizer"
+            recipe = "ms-quantum-stabilizer"
           },
           {
             type = "unlock-recipe",

@@ -18,9 +18,9 @@ data:extend({
     pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
     drop_sound = space_age_item_sounds.agriculture_inventory_move,
     stack_size = 50,
-    default_import_location = "gleba",
+    default_import_location = "nauvis",
     weight = 1 * kg,
-    spoil_ticks = 1 * minute,
+    spoil_ticks = 10 * minute,
     spoil_result = "calcite"
   },
   {
@@ -40,9 +40,9 @@ data:extend({
     pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
     drop_sound = space_age_item_sounds.agriculture_inventory_move,
     stack_size = 50,
-    default_import_location = "gleba",
+    default_import_location = "nix",
     weight = 1 * kg,
-    spoil_ticks = 1 * minute,
+    spoil_ticks = 20 * minute,
     spoil_result = "ice"
   },
   {
@@ -62,9 +62,9 @@ data:extend({
     pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
     drop_sound = space_age_item_sounds.agriculture_inventory_move,
     stack_size = 50,
-    default_import_location = "gleba",
+    default_import_location = "fulgora",
     weight = 1 * kg,
-    spoil_ticks = 1 * minute,
+    spoil_ticks = 5 * minute,
     spoil_result = "sulfur"
   },
   {
@@ -84,7 +84,7 @@ data:extend({
     pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
     drop_sound = space_age_item_sounds.agriculture_inventory_move,
     stack_size = 50,
-    default_import_location = "gleba",
+    default_import_location = "nauvis",
     weight = 1 * kg,
     spoil_ticks = 1 * minute,
     spoil_result = "uranium-238"
@@ -106,9 +106,9 @@ data:extend({
     pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
     drop_sound = space_age_item_sounds.agriculture_inventory_move,
     stack_size = 50,
-    default_import_location = "gleba",
+    default_import_location = "vulcanus",
     weight = 1 * kg,
-    spoil_ticks = 1 * minute,
+    spoil_ticks = 20 * minute,
     spoil_result = "stone"
   },
 
@@ -156,6 +156,7 @@ data:extend({
       primary = {r = 255, g = 94, b = 0, a = 1.000},
       secondary = {r = 255, g = 94, b = 0, a = 1.000},
     },
+    auto_recycle = false,
     show_amount_in_title = false
   },
 
@@ -194,6 +195,7 @@ data:extend({
       primary = {r = 255, g = 56, b = 0, a = 1.000},
       secondary = {r = 255, g = 56, b = 0, a = 1.000},
     },
+    auto_recycle = false,
     show_amount_in_title = false
   },
 
@@ -224,6 +226,7 @@ data:extend({
       primary = {r = 106, g = 255, b = 0, a = 1.000},
       secondary = {r = 143, g = 0, b = 255, a = 1.000},
     },
+    auto_recycle = false,
     show_amount_in_title = false
   },
 
@@ -256,6 +259,7 @@ data:extend({
       primary = {r = 255, g = 221, b = 0, a = 1.000},
       secondary = {r = 255, g = 221, b = 0, a = 1.000},
     },
+    auto_recycle = false,
     show_amount_in_title = false
   },
   
@@ -293,6 +297,7 @@ data:extend({
       primary = {r = 0, g = 255, b = 255, a = 1.000},
       secondary = {r = 0, g = 255, b = 255, a = 1.000},
     },
+    auto_recycle = false,
     show_amount_in_title = false
   },
 
@@ -331,6 +336,7 @@ data:extend({
       primary = {r = 3, g = 168, b = 0, a = 1.000},
       secondary = {r = 3, g = 168, b = 0, a = 1.000},
     },
+    auto_recycle = false,
     show_amount_in_title = false
   },
 
@@ -359,6 +365,7 @@ data:extend({
       primary = {r = 3, g = 168, b = 0, a = 1.000},
       secondary = {r = 3, g = 168, b = 0, a = 1.000},
     },
+    auto_recycle = false,
   },
 
   {
@@ -384,6 +391,7 @@ data:extend({
       primary = {r = 255, g = 221, b = 0, a = 1.000},
       secondary = {r = 255, g = 221, b = 0, a = 1.000},
     },
+    auto_recycle = false,
   },
 
   {
@@ -416,6 +424,7 @@ data:extend({
       primary = {r = 255, g = 56, b = 0, a = 1.000},
       secondary = {r = 255, g = 56, b = 0, a = 1.000},
     },
+    auto_recycle = false,
   },
 
   {
@@ -441,6 +450,7 @@ data:extend({
       primary = {r = 106, g = 255, b = 0, a = 1.000},
       secondary = {r = 143, g = 0, b = 255, a = 1.000},
     },
+    auto_recycle = false,
   },
 
 })

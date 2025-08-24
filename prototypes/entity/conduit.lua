@@ -36,7 +36,7 @@ local building_entity =
       min = 1
     }
   },
-  energy_production = "150kW",
+  energy_production = "150GW",
   energy_usage = "0kW",
   enable_inventory_bar = false,
   minable = {mining_time = 0.1, result = "neumann-conduit"},
