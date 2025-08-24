@@ -17,6 +17,9 @@ local icy_snow_sounds = sound_variations("__space-age__/sound/walking/icy-snow",
 local ice_sounds = sound_variations("__space-age__/sound/walking/ice", 10, 0.8, volume_multiplier("main-menu", 2.9))
 local smooth_ice_sounds = sound_variations("__space-age__/sound/walking/smooth-ice", 9, 0.8)
 local frozen_concrete_sounds = sound_variations("__space-age__/sound/walking/frozen-concrete", 11, 0.8)
+
+local nix_absorption = { gravitons    = 0.000010 }
+
 local snow_driving_sound =
 {
   sound =
@@ -179,7 +182,7 @@ data:extend({
     driving_sound = snow_driving_sound,
     map_color = snow_map_color_low,
     scorch_mark_color = {r = 0.318, g = 0.222, b = 0.152, a = 1.000},
-    absorptions_per_second = tile_pollution.ice,
+    absorptions_per_second = nix_absorption,
     vehicle_friction_modifier = snow_vehicle_speed_modifier,
     thawed_variant = "blue-grass-2",
     decorative_removal_probability = 1,
@@ -212,7 +215,7 @@ data:extend({
     driving_sound = ice_driving_sound,
     map_color = {100, 135, 177},
     scorch_mark_color = {r = 0.318, g = 0.222, b = 0.152, a = 1.000},
-    absorptions_per_second = tile_pollution.ice,
+    absorptions_per_second = nix_absorption,
     vehicle_friction_modifier = ice_vehicle_speed_modifier,
     trigger_effect = tile_trigger_effects.grass_1_trigger_effect()
   },
@@ -235,7 +238,7 @@ data:extend({
     driving_sound = ice_driving_sound,
     map_color = {100, 135, 177},
     scorch_mark_color = {r = 0.318, g = 0.222, b = 0.152, a = 1.000},
-    absorptions_per_second = tile_pollution.ice,
+    absorptions_per_second = nix_absorption,
     vehicle_friction_modifier = smooth_ice_vehicle_speed_modifier,
     trigger_effect = tile_trigger_effects.grass_1_trigger_effect()
   },
