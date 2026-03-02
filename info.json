@@ -12,7 +12,7 @@
         "common-prototypes >= 0.0.4",
         "metal-and-stars-graphics >= 0.0.4",
         "metal-and-stars-graphics-2 >= 0.0.3",
-        "ArmouredBiters <= 1.2.1",
+        "ArmouredBiters >= 1.2.1",
         "PlanetsLib >= 1.7.4",
         "? PlanetsLibTiers >= 1.0.2",
         "? Starmap_Nexuz >= 1.0.0",
