@@ -1,13 +1,14 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.19
-Date: 06.03.2026
+Date: 06.08.2026
   Bugfixes:
     - Microgravity lab was showing as biolab in the electrical overlay
     - carbonic asteroid refined crushing and sloppy asteroid smelting should now correctly benefit from improved asteroid productivity
     - nanite rocket parts are now unlocked once you first craft nanites
-    - corrected ringworld visible planet size
+    - corrected ringworld visible planet icon size
     - both stargates should now correctly provide 150% solar power
-    - sdfa
+    - custom character model mods should now correctly work with this mod
+    - the liquid fuel heating tower's heat capacity has been increased, leading to less heat waste with more advanced fuels
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.18
 Date: 06.03.2026

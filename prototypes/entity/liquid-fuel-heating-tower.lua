@@ -24,7 +24,7 @@ data:extend({
         min = 10
       }
     },
-    consumption = "40MW",
+    consumption = "500MW",
     neighbour_bonus = 0,
     energy_source =
     {
