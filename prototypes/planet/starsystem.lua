@@ -145,7 +145,7 @@ if ringworld then
 data.raw["planet"]["ringworld"].draw_orbit = false
 
     if mods["visible-planets"] then
-        vp_override_planet_sprite("ringworld", "__metal-and-stars-graphics-2__/graphics/starmap/visible-planets/ringworld-visibleplanet.png", 1024)
+        vp_override_planet_sprite("ringworld", "__metal-and-stars-graphics-2__/graphics/starmap/visible-planets/ringworld-visibleplanet.png", 1000)
         vp_override_planet_scale("ringworld", 2.0)
     end 
 else

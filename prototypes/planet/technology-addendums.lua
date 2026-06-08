@@ -23,6 +23,9 @@ end
 
 if data.raw["technology"]["asteroid-productivity"] ~= nil then
     table.insert(data.raw["technology"]["asteroid-productivity"].effects, {type = "change-recipe-productivity", recipe = "mirandite-sludge", change = 0.1})
+    table.insert(data.raw["technology"]["asteroid-productivity"].effects, {type = "change-recipe-productivity", recipe = "carbonic-asteroid-refined-crushing", change = 0.1})
+    table.insert(data.raw["technology"]["asteroid-productivity"].effects, {type = "change-recipe-productivity", recipe = "sloppy-asteroid-smelting", change = 0.1})
+
 end
 
 if data.raw["fluid"]["crude-oil"] ~= nil then

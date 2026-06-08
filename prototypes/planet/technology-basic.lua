@@ -129,6 +129,25 @@ data:extend({
           item = "nanites"
         }
     },
+        {
+        type = "technology",
+        name = "nanite-rocket-construction",
+        icon = "__metal-and-stars-graphics__/graphics/technology/nanite-rocket-construction.png",
+        icon_size = 256,
+        effects =
+        {
+            {
+                type = "unlock-recipe",
+                recipe = "nano-rocket-part"
+            },
+        },
+        prerequisites = {"nanite-extraction"},
+        research_trigger =
+        {
+          type = "craft-item",
+          item = "nanites"
+        }
+    },
     {
         type = "technology",
         name = "nanite-science-pack",

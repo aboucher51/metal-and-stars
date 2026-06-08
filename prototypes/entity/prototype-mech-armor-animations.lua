@@ -133,5 +133,3 @@ table.insert(data.raw.character.character.animations,
   }
 })
 
-table.insert(data.raw['character-corpse']['character-corpse'].pictures, corpse)
-data.raw['character-corpse']['character-corpse'].armor_picture_mapping["mech-armor"] = #data.raw['character-corpse']['character-corpse'].pictures

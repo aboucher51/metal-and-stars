@@ -14,6 +14,7 @@ data:extend({
         orientation = 0.28,
         magnitude = 1.0,
         label_orientation = 0.15,
+        solar_power_in_space = 150,
         asteroid_spawn_influence = 1,
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(
             asteroid_util.nauvis_vulcanus,
@@ -31,7 +32,8 @@ data:extend({
         distance = 29,     
         orientation = 0,      
         magnitude = 1.0,      
-        label_orientation = 0.15,     
+        label_orientation = 0.15,   
+        solar_power_in_space = 150,
         asteroid_spawn_influence = 1,      
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(
             asteroid_util.nauvis_vulcanus,

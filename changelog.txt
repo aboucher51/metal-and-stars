@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.19
+Date: 06.03.2026
+  Bugfixes:
+    - Microgravity lab was showing as biolab in the electrical overlay
+    - carbonic asteroid refined crushing and sloppy asteroid smelting should now correctly benefit from improved asteroid productivity
+    - nanite rocket parts are now unlocked once you first craft nanites
+    - corrected ringworld visible planet size
+    - both stargates should now correctly provide 150% solar power
+    - sdfa
+---------------------------------------------------------------------------------------------------
 Version: 0.1.18
 Date: 06.03.2026
   Bugfixes:

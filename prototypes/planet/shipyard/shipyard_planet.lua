@@ -27,10 +27,11 @@ local machina = {
         ["solar-power"] = 200,
         ["local-electricity-grid"] = 300,
         temperature = 268,
-        gravity = 2
+        gravity = 2,
     },
     surface_render_parameters =
     {
+
     },
     ticks_between_player_effects = 2
 }

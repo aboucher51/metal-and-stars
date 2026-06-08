@@ -106,30 +106,6 @@ data:extend({
     },
     {
         type = "technology",
-        name = "nanite-rocket-construction",
-        icon = "__metal-and-stars-graphics__/graphics/technology/nanite-rocket-construction.png",
-        icon_size = 256,
-        effects =
-        {
-            {
-                type = "unlock-recipe",
-                recipe = "nano-rocket-part"
-            },
-        },
-        prerequisites = {"nanite-science-pack"},
-        unit =
-        {
-            count = 1000,
-            ingredients =
-            {
-              {"space-science-pack", 1},
-              {"nanite-science-pack", 1},
-            },
-            time = 60
-        }
-    },
-    {
-        type = "technology",
         name = "insulated-rocket-body",
         icon = "__metal-and-stars-graphics__/graphics/technology/insulated-rocket-body.png",
         icon_size = 256,

@@ -10,7 +10,7 @@ data:extend({
     {
         type = "lab",
         name = "microgravity-lab",
-        icon = "__space-age__/graphics/icons/biolab.png",
+        icon = "__metal-and-stars-graphics__/graphics/icons/particle-accelerator.png",
         minable = {mining_time = 0.5, result = "microgravity-lab"},
         subgroup = "production-machine",
         order = "z-z[z-lab]",
@@ -21,8 +21,8 @@ data:extend({
         impact_category = "metal",
         alert_icon_shift = util.by_pixel(0, -12),
         icon_draw_specification = {shift = {0, -0.3}},
-        corpse = "biolab-remnants",
-        dying_explosion = "biolab-explosion",
+        corpse = "lab-remnants",
+        dying_explosion = "lab-explosion",
         resistances =
         {
           {
@@ -128,13 +128,10 @@ data:extend({
         close_sound = sounds.machine_close,
         working_sound =
         {
-          sound = {filename = "__base__/sound/lab.ogg", volume = 0.7},
-          sound_accents =
-          {
-            {sound = {variations = sound_variations("__space-age__/sound/entity/biolab/biolab-beaker", 7, 0.8)}, frame = 1, audible_distance_modifier = 0.4},
-            {sound = {variations = sound_variations("__space-age__/sound/entity/biolab/biolab-centrifuge", 4, 0.7)}, frame = 14, audible_distance_modifier = 0.3},
-          },
-          max_sounds_per_type = 2,
+          sound = { filename = "__base__/sound/lab.ogg", volume = 0.7, modifiers = { volume_multiplier("main-menu", 2.2), volume_multiplier("tips-and-tricks", 0.8) } },
+          audible_distance_modifier = 0.7,
+          fade_in_ticks = 4,
+          fade_out_ticks = 20
         },
         researching_speed = 2,
         inputs =

@@ -15,7 +15,7 @@ local building_entity =
 {
   type = "lab",
   name = item_name,
-  icon = "__base__/graphics/icons/lab.png",
+  icon = "__metal-and-stars-graphics__/graphics/icons/particle-accelerator.png",
   flags = {"placeable-player", "player-creation"},
   minable = {mining_time = 0.2, result = item_name},
   max_health = 150,
