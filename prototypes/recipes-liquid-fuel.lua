@@ -83,7 +83,7 @@ data:extend({
       secondary = {r = 1.0, g = 0.7, b = 0.0, a = 1.000},
     },
     allow_productivity = false,
-      maximum_productivity = 1
+      maximum_productivity = 0
   },
   {
     type = "recipe",
@@ -104,7 +104,7 @@ data:extend({
       secondary = {r = 1.0, g = 0.7, b = 0.0, a = 1.000},
     },
     allow_productivity = false,
-      maximum_productivity = 1
+      maximum_productivity = 0
   },
   {
     type = "recipe",
@@ -125,7 +125,7 @@ data:extend({
       secondary = {r = 1.0, g = 0.7, b = 0.0, a = 1.000},
     },
     allow_productivity = false,
-      maximum_productivity = 1
+      maximum_productivity = 0
   },
     --//// canister Recipes
     {
@@ -147,7 +147,7 @@ data:extend({
         secondary = {r = 1.0, g = 0.7, b = 0.0, a = 1.000},
       },
       allow_productivity = false,
-      maximum_productivity = 1
+      maximum_productivity = 0
     },
     {
       type = "recipe",
@@ -168,7 +168,7 @@ data:extend({
         secondary = {r = 1.0, g = 0.7, b = 0.0, a = 1.000},
       },
       allow_productivity = false,
-      maximum_productivity = 1
+      maximum_productivity = 0
     },
     {
       type = "recipe",
@@ -189,6 +189,6 @@ data:extend({
         secondary = {r = 1.0, g = 0.7, b = 0.0, a = 1.000},
       },
       allow_productivity = false,
-      maximum_productivity = 1
+      maximum_productivity = 0
     },
 })

@@ -36,16 +36,15 @@ data:extend({
             recipe = "overclock-module-2"
           }
         },
-        prerequisites = {"overclock-module", "space-science-pack"},
+        prerequisites = {"overclock-module", "processing-unit"},
         unit =
         {
-          count = 200,
+          count = 100,
           ingredients =
           {
             {"automation-science-pack", 1},
             {"logistic-science-pack", 1},
-            {"chemical-science-pack", 1},
-            {"space-science-pack", 1}
+            {"chemical-science-pack", 1}
           },
           time = 30
         },

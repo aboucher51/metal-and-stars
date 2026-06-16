@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.20
+Date: 06.16.2026
+  Bugfixes:
+    - liquid fuel canister/bottle conversion recipes can no longer receive any productivity, fixing an exploit that allowed infinite fuel by looping fuel through productivity research
+    - Overclock module 2 research is now at the same tier as other level 2 modules (chemical science) instead of being gated behind space science
+---------------------------------------------------------------------------------------------------
 Version: 0.1.19
 Date: 06.08.2026
   Bugfixes:
