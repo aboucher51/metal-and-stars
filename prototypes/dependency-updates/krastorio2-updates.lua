@@ -13,7 +13,7 @@
 -- "liquid-nuclear-fuel" production recipe (which already costs U-235).
 if mods["Krastorio2"] or mods["Krastorio2-spaced-out"] then
     local empty_recipe = data.raw["recipe"]["empty-liquid-nuclear-fuel"]
-    if empty_recipe ~= nil and data.raw["item"]["uranium-235"] ~= nil then
+    if empty_recipe ~= nil and empty_recipe.ingredients ~= nil and data.raw["item"]["uranium-235"] ~= nil then
         local has_u235 = false
         for _, ingredient in pairs(empty_recipe.ingredients) do
             if ingredient.name == "uranium-235" then
