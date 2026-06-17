@@ -11,4 +11,11 @@ data:extend({
         setting_type = "startup",
         default_value = false
     },
+    {
+        type = "bool-setting",
+        name = "armoured-biters-circa-only",
+        setting_type = "startup",
+        default_value = true,
+        order = "a-z"
+    },
 })

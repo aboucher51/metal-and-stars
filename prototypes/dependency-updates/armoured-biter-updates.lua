@@ -29,4 +29,11 @@ data:extend({
     },
 })
 
-data.raw["unit-spawner"]["armoured-biter-spawner"].autoplace = {probability_expression = "ringworld_snapper_enemy_base_probability", force = "ringworld_snappers"}
+-- By default Metal and Stars confines armoured biters to Circa (the ringworld) by
+-- replacing their autoplace with a ringworld-only probability expression. This stops
+-- them spawning on Nauvis / other planets, where the base ArmouredBiters mod would
+-- otherwise place them. The "armoured-biters-circa-only" startup setting lets players
+-- opt out and keep the mod's default (Nauvis-wide) autoplace.
+if settings.startup["armoured-biters-circa-only"].value then
+    data.raw["unit-spawner"]["armoured-biter-spawner"].autoplace = {probability_expression = "ringworld_snapper_enemy_base_probability", force = "ringworld_snappers"}
+end
