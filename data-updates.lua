@@ -2,6 +2,7 @@ require("__metal-and-stars__.prototypes.dependency-updates.enemy-race-manager-up
 require("__metal-and-stars__.prototypes.dependency-updates.muluna-updates")
 
 require("__metal-and-stars__.prototypes.dependency-updates.lab-science-updates")
+require("__metal-and-stars__.prototypes.dependency-updates.krastorio2-updates")
 require("__metal-and-stars__.prototypes.dependency-updates.post-pollution-updates")
 require("__metal-and-stars__.prototypes.dependency-updates.muluna-updates")
 data.raw["rocket-silo"]["rocket-silo"].fixed_recipe = nil
