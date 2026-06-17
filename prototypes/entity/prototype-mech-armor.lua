@@ -1,6 +1,16 @@
 local item_sounds = require("__base__.prototypes.item_sounds")
 local simulations = require("__space-age__.prototypes.factoriopedia-simulations")
 
+-- Define a mod-prefixed equipment grid (MSMS = MetalStarsMechSuit) instead of
+-- reusing the generic vanilla "medium-equipment-grid", whose shared name collides
+-- with other mods that reference/modify the same grid. We deep-copy the vanilla
+-- medium grid so width/height/equipment_categories stay identical, then rename it.
+local msms_grid = table.deepcopy(data.raw["equipment-grid"]["medium-equipment-grid"])
+msms_grid.name = "MSMS-grid"
+msms_grid.localised_name = nil
+msms_grid.localised_description = nil
+data:extend({ msms_grid })
+
 data:extend({
   {
     type = "armor",
@@ -37,7 +47,7 @@ data:extend({
     drop_sound = item_sounds.armor_large_inventory_move,
     stack_size = 1,
     infinite = true,
-    equipment_grid = "medium-equipment-grid",
+    equipment_grid = "MSMS-grid",
     inventory_size_bonus = 50,
     provides_flight = true,
     takeoff_sound = {filename = "__space-age__/sound/entity/mech-armor/mech-armor-takeoff.ogg", volume = 0.2, aggregation = {max_count = 2, remove = true, count_already_playing = true}},
