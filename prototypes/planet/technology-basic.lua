@@ -411,6 +411,10 @@ data:extend({
             type = "unlock-recipe",
             recipe = "bone-to-calcite"
           },
+          {
+            type = "unlock-recipe",
+            recipe = "calcite-calcination"
+          },
         },
         prerequisites = {"planet-discovery-ringworld"},
         research_trigger =
