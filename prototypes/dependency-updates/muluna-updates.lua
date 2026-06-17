@@ -41,27 +41,30 @@ if mods["planet-muluna"] then
         end
         space_science.prerequisites = filtered
 
-        -- Muluna sets a build-entity research trigger tied to muluna-steam-crusher, which
-        -- can only be built after the Muluna chain. Since space science no longer depends on
-        -- that chain, clear the trigger and restore a normal unit-based cost so the
-        -- technology is researchable early. (A technology may have either a research_trigger
-        -- or a unit, not both, so we set the unit only after removing the trigger.)
-        if space_science.research_trigger ~= nil
-            and space_science.research_trigger.entity == "muluna-steam-crusher" then
+        -- Muluna swaps space-science-pack's normal unit cost for a build-entity
+        -- research_trigger (tied to a Muluna-internal entity such as muluna-steam-crusher),
+        -- which can only be satisfied after the Muluna chain. Since space science no longer
+        -- depends on that chain, clear any Muluna-style research_trigger and ensure the
+        -- technology has a normal unit-based cost so it is researchable early. We do this
+        -- independently of the specific trigger entity/recipe name so the fix still applies
+        -- if Muluna renames the entity or uses a different trigger type. (A technology may
+        -- have either a research_trigger or a unit, not both, so we set the unit only after
+        -- removing the trigger.)
+        if space_science.research_trigger ~= nil then
             space_science.research_trigger = nil
-            if space_science.unit == nil then
-                space_science.unit = {
-                    count = 1000,
-                    ingredients = {
-                        {"automation-science-pack", 1},
-                        {"logistic-science-pack", 1},
-                        {"chemical-science-pack", 1},
-                        {"production-science-pack", 1},
-                        {"utility-science-pack", 1},
-                    },
-                    time = 60,
-                }
-            end
+        end
+        if space_science.unit == nil then
+            space_science.unit = {
+                count = 1000,
+                ingredients = {
+                    {"automation-science-pack", 1},
+                    {"logistic-science-pack", 1},
+                    {"chemical-science-pack", 1},
+                    {"production-science-pack", 1},
+                    {"utility-science-pack", 1},
+                },
+                time = 60,
+            }
         end
     end
 
