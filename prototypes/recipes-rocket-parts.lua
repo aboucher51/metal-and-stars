@@ -65,4 +65,24 @@ data:extend({
         allow_productivity = true,
         auto_recycle = false,
     },
+    -- Nanite-assembled rocket silo so players who arrive on Neumann V (shipyard)
+    -- empty-handed can still bootstrap an exit. Crafts in the microgravity
+    -- assembler (nanotech category) once nanite-rocket-construction is researched.
+    {
+        type = "recipe",
+        name = "nanite-rocket-silo",
+        icon = "__base__/graphics/icons/rocket-silo.png",
+        energy_required = 60,
+        enabled = false,
+        category = "nanotech",
+        subgroup = "space-nanites",
+        order = "c[lithium]-c[rocket-silo]",
+        ingredients =
+        {
+            {type = "item", name = "nanites", amount = 1000},
+        },
+        results = {{type="item", name="rocket-silo", amount=1}},
+        allow_productivity = false,
+        auto_recycle = false,
+    },
 })

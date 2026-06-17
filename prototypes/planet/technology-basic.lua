@@ -140,6 +140,10 @@ data:extend({
                 type = "unlock-recipe",
                 recipe = "nano-rocket-part"
             },
+            {
+                type = "unlock-recipe",
+                recipe = "nanite-rocket-silo"
+            },
         },
         prerequisites = {"nanite-extraction"},
         research_trigger =
