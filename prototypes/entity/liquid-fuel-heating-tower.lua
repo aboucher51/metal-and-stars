@@ -32,7 +32,14 @@ data:extend({
       burns_fluid = true,
       emissions_per_minute = {pollution = 50},
       effectivity = 3,
-      fluid_usage_per_tick = .1,
+      -- fluid_usage_per_tick caps the fluid throughput (units/tick) when burns_fluid = true.
+      -- Burned power = fluid_usage_per_tick * 60 * fuel_value * effectivity, clamped to `consumption`.
+      -- The previous value of 0.1 capped throughput at 6 units/s, so even the primary refined
+      -- fuel (liquid-rocket-fuel, 11MJ) only reached 6 * 11MJ * 3 = 198MW, far below the 500MW rating.
+      -- 0.25 -> 15 units/s; with liquid-rocket-fuel that is 15 * 11MJ * 3 = 495MW (~rated capacity),
+      -- so the tower can hit its rated output and higher-energy fuels stay relevant via the 500MW clamp.
+      -- (Crude oil at 1MJ still yields only 45MW, keeping refined fuels worthwhile.)
+      fluid_usage_per_tick = .25,
       light_flicker =
       {
         color = {0,0,0},
