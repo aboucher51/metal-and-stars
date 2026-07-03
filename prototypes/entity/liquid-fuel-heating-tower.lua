@@ -14,7 +14,7 @@ data:extend({
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "liquid-fuel-heating-tower"},
     max_health = 500,
-    forced_symmetry = "horizontal",
+    show_fluid_visualization_when_in_cursor=true,
     corpse = "heating-tower-remnants",
     dying_explosion = "heating-tower-explosion",
     surface_conditions =
@@ -45,12 +45,9 @@ data:extend({
         pipe_picture_frozen = require("__space-age__.prototypes.entity.electromagnetic-plant-pictures").pipe_pictures_frozen,
         pipe_covers = pipecoverspictures(),
         volume = 200,
-        secondary_draw_orders = { north = -1 },
+        --secondary_draw_orders = { north = -1 },
         pipe_connections = {
-          { flow_direction="input", direction = defines.direction.north, position = {0, -1} },
-          { flow_direction="input", direction = defines.direction.east,  position = {1, 0} },
-          { flow_direction="input", direction = defines.direction.south, position = {0, 1} },
-          { flow_direction="input", direction = defines.direction.west,  position = {-1, 0} }
+          { flow_direction="input-output", direction = defines.direction.south, position = {0, 1} }
         }
       },
 
