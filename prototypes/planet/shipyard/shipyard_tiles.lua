@@ -331,12 +331,6 @@ data:extend
     type = "tile",
     order = "a[oil]-b[deep]",
     subgroup = "fulgora-tiles",
-    -- Use the standard deep-water collision mask (includes the "water_tile"
-    -- layer) instead of oil_ocean_deep(). The vanilla offshore pump's
-    -- buildability rules require the "water_tile" layer to place on a tile and
-    -- extract its `fluid`; oil_ocean_deep() intentionally omits it (that is why
-    -- Fulgora's oil ocean cannot be offshore-pumped), which prevented the
-    -- offshore pump from extracting Gray Goo on Neumann IV. See issue #44.
     collision_mask = tile_collision_masks.water(),
     autoplace = {probability_expression = "grey_goo_noise"},
     layer = 3,
