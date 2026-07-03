@@ -38,7 +38,6 @@ local building_entity =
   energy_usage = "1W",
   resource_searching_radius = 7,
   circuit_wire_max_distance = default_circuit_wire_max_distance,
-  forced_symmetry = "horizontal",
   working_sound =
   {
       sound = {filename = "__base__/sound/electric-mining-drill.ogg", volume = 0.8},

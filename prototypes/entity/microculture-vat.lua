@@ -80,7 +80,6 @@ local building_entity =
     probability_expression = "shipyard_crafting_machine_noise"
   },
   energy_usage = "75kW",
-  forced_symmetry = "horizontal",
   open_sound = sounds.machine_open,
   close_sound = sounds.machine_close,
   allowed_effects = {"speed", "consumption", "pollution", "productivity", "quality"},
