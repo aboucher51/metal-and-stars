@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.20
+Date: 07.03.2026
+  Bugfixes:
+    - Circa and Neumann V should now correctly always be daytime and not have any clouds
+    - gravitons now correctly have a localised pollutant name
+    - gray goo should be more accomodating to offshore pumps
+    - minor tooltip changes
+---------------------------------------------------------------------------------------------------
 Version: 0.1.19
 Date: 06.08.2026
   Bugfixes:

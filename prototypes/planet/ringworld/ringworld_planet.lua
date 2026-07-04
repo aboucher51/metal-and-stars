@@ -21,7 +21,7 @@ local machina = {
     solar_power_in_space = 120,
     surface_properties =
     {
-        ["day-night-cycle"] = 0,
+        ["day-night-cycle"] = 1,
         ["magnetic-field"] = 0,
         pressure = 1000,
         ["solar-power"] = 300,
