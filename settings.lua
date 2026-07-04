@@ -11,4 +11,10 @@ data:extend({
         setting_type = "startup",
         default_value = false
     },
+    {
+        type = "bool-setting",
+        name = "is-science-packs-other-labs-enabled",
+        setting_type = "startup",
+        default_value = false
+    },
 })
