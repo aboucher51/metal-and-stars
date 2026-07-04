@@ -860,6 +860,26 @@ data:extend({
     enabled = false
   },
   {
+    -- Calcite sink for Circa: players arrive here before Vulcanus/Fulgora and
+    -- have no way to dispose of excess calcite (Acid Neutralization is
+    -- Vulcanus-only, recyclers need Fulgora tech). Calcining calcite drives off
+    -- CO2 and leaves a stony residue, giving a small-loss productive sink that
+    -- yields stone (useful for landfill/concrete) instead of a pure void.
+    type = "recipe",
+    name = "calcite-calcination",
+    category = "smelting",
+    subgroup = "ringworld-processes",
+    order = "c[lithium]-c[calcite-calcination]",
+    energy_required = 3.2,
+    ingredients = {
+      {type = "item", name = "calcite", amount = 5},
+    },
+    results = {{type="item", name="stone", amount=2}},
+    allow_productivity = true,
+    auto_recycle = false,
+    enabled = false
+  },
+  {
     type = "recipe",
     name = "ring-science-pack",
     category = "crafting-with-fluid",
