@@ -1,6 +1,12 @@
 local item_sounds = require("__base__.prototypes.item_sounds")
 local simulations = require("__space-age__.prototypes.factoriopedia-simulations")
 
+local ms_medium_equipment_grid = table.deepcopy(data.raw["equipment-grid"]["medium-equipment-grid"])
+ms_medium_equipment_grid.name = "ms-medium-equipment-grid"
+ms_medium_equipment_grid.localised_name = nil
+ms_medium_equipment_grid.localised_description = nil
+data:extend({ ms_medium_equipment_grid })
+
 data:extend({
   {
     type = "armor",
@@ -37,7 +43,7 @@ data:extend({
     drop_sound = item_sounds.armor_large_inventory_move,
     stack_size = 1,
     infinite = true,
-    equipment_grid = "medium-equipment-grid",
+    equipment_grid = "ms-medium-equipment-grid",
     inventory_size_bonus = 50,
     provides_flight = true,
     takeoff_sound = {filename = "__space-age__/sound/entity/mech-armor/mech-armor-takeoff.ogg", volume = 0.2, aggregation = {max_count = 2, remove = true, count_already_playing = true}},
