@@ -1,5 +1,5 @@
 local shipyard_map_gen = require("__metal-and-stars__.prototypes.planet.shipyard.shipyard_map_gen")
-local asteroid_util = require("__space-age__.prototypes.planet.asteroid-spawn-definitions")
+local asteroid_util = require("__metal-and-stars__.prototypes.planet.asteroid-spawn-definitions")
 
 local meld = require("meld")
 
@@ -19,6 +19,7 @@ local machina = {
     subgroup = "planets",
     pollutant_type = nil,
     solar_power_in_space = 200,
+    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.calidusgate_shipyard, 0.9),
     surface_properties =
     {
         ["day-night-cycle"] = 1,

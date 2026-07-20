@@ -11,6 +11,22 @@ local tile_spritesheet_layout = tile_graphics.tile_spritesheet_layout
 
 local patch_for_inner_corner_of_transition_between_transition = tile_graphics.patch_for_inner_corner_of_transition_between_transition
 
+local empty_space_destroyed_item_trigger =
+{
+  type = "direct",
+  action_delivery =
+  {
+    type = "instant",
+    source_effects =
+    {
+      type = "create-trivial-smoke",
+      smoke_name = "light-smoke",
+      offset_deviation = {{-0.1, -0.1}, {0.1, 0.1}},
+      starting_frame_deviation = 5
+    }
+  }
+}
+
 data:extend
 {
       {
@@ -107,6 +123,8 @@ data:extend
         },
         layer_group = "zero",
         layer = 0,
+        destroys_dropped_items = true,
+        default_destroyed_dropped_item_trigger = empty_space_destroyed_item_trigger,
         effect = "space",
         effect_color = {0.5, 0.507, 0},
         effect_color_secondary = { 0, 68, 25 },
@@ -331,7 +349,7 @@ data:extend
     type = "tile",
     order = "a[oil]-b[deep]",
     subgroup = "fulgora-tiles",
-    collision_mask = tile_collision_masks.water(),
+    collision_mask = tile_collision_masks.shallow_water(),
     autoplace = {probability_expression = "grey_goo_noise"},
     layer = 3,
     layer_group = "water",

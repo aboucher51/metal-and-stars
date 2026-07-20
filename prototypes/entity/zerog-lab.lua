@@ -18,11 +18,12 @@ data:extend({
         collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
         selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
         max_health = 350,
-        impact_category = "metal",
+        impact_category = "metal-large",
         alert_icon_shift = util.by_pixel(0, -12),
         icon_draw_specification = {shift = {0, -0.3}},
         corpse = "lab-remnants",
         dying_explosion = "lab-explosion",
+        effect_receiver = { base_effect = { productivity = 0.5 }},
         resistances =
         {
           {

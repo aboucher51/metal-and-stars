@@ -1,4 +1,4 @@
-local asteroid_util = require("__space-age__.prototypes.planet.asteroid-spawn-definitions")
+local asteroid_util = require("__metal-and-stars__.prototypes.planet.asteroid-spawn-definitions")
 
 data:extend({
     --first define the stargates
@@ -17,8 +17,8 @@ data:extend({
         solar_power_in_space = 150,
         asteroid_spawn_influence = 1,
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(
-            asteroid_util.nauvis_vulcanus,
-            0.1 
+            asteroid_util.nauvis_senestellagate,
+            0.9 
         )
     },
     {
@@ -36,7 +36,7 @@ data:extend({
         solar_power_in_space = 150,
         asteroid_spawn_influence = 1,      
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(
-            asteroid_util.nauvis_vulcanus,
+            asteroid_util.calidusgate_shipyard,
             0.1 
         )
     },
@@ -52,18 +52,18 @@ data:extend({
         to = "calidus-senestella-gate-calidus",  
         order = "h",  
         length = 500,  
-        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_vulcanus)
+        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_senestellagate)
     },
     {
         type = "space-connection",  
         name = "gate-senestella-nauvis",  
         subgroup = "planet-connections",  
         icon = "__metal-and-stars-graphics-2__/graphics/icons/edge-icon.png",  
-        from = "calidus-senestella-gate-calidus",  
-        to = "nauvis",  
-        order = "h",  
-        length = 10000,  
-        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_vulcanus)
+        from = "nauvis",
+        to = "calidus-senestella-gate-calidus",
+        order = "h",
+        length = 10000,
+        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_senestellagate)
     },
     {
         type = "space-connection",  
@@ -86,7 +86,7 @@ data:extend({
         to = "shipyard",
         order = "b",
         length = 15000,
-        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_gleba)
+        asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.calidusgate_shipyard)
     },
     {
         type = "space-connection",

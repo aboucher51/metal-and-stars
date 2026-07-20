@@ -1,4 +1,18 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 07.03.2026
+  Changes:
+    - Gray Goo to Nanite recipe now produces a small amount of crude oil instead of lubricant
+    - added more nanite recipes
+    - added smelter recipe to turn 20 nanites into copper ore
+    - inserters can now discard items in the space tiles on Neumann V
+    - Neumann V's spacegate route and orbit has had it's asteroid chunk density increased
+    - Microgravity Lab and Microgravity Assembler now have base .5 productivity
+    - Microgravity Lab now accepts basic science packs and other mod science packs by default
+    - Microgravity Assembler crafting recipe categories have been expanded
+  Bugfixes:
+    - Prototype mech armor now correctly requires space science
+---------------------------------------------------------------------------------------------------
 Version: 0.1.20
 Date: 07.03.2026
   Changes:

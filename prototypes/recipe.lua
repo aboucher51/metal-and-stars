@@ -551,7 +551,25 @@ data:extend({
     },
     results = {
       {type="item", name="nanites", amount=50},
-      {type="fluid", name="lubricant", amount=1}
+      {type="fluid", name="crude-oil", amount=1}
+    },
+    auto_recycle = false,
+    allow_productivity = true,
+    enabled = false
+  },
+  {
+    type = "recipe",
+    name = "nanite-melting",
+    icon = "__metal-and-stars-graphics__/graphics/icons/nanites.png",
+    category = "smelting",
+    subgroup = "space-nanites",
+    order = "c[lithium]-b[lithium-plate]",
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "nanites", amount = 20},
+    },
+    results = {
+      {type="item", name="copper-ore", amount_min=1, amount_max=2, probability=0.5},
     },
     auto_recycle = false,
     allow_productivity = true,
@@ -606,6 +624,78 @@ data:extend({
     },
     results = {
       {type="item", name="crusher", amount=1}
+    },
+    auto_recycle = false,
+    allow_productivity = true,
+    enabled = false
+  },
+  {
+    type = "recipe",
+    name = "nanite-furnace",
+    icon = "__metal-and-stars-graphics-2__/graphics/icons/nano-electric-furnace.png",
+    category = "nanotech",
+    subgroup = "space-nanites",
+    order = "c[lithium]-b[lithium-plate]",
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "nanites", amount = 150},
+    },
+    results = {
+      {type="item", name="electric-furnace", amount=1}
+    },
+    auto_recycle = false,
+    allow_productivity = true,
+    enabled = false
+  },
+  {
+    type = "recipe",
+    name = "nanite-silo",
+    icon = "__metal-and-stars-graphics-2__/graphics/icons/nano-rocket-silo.png",
+    category = "nanotech",
+    subgroup = "space-nanites",
+    order = "c[lithium]-b[lithium-plate]",
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "nanites", amount = 150},
+    },
+    results = {
+      {type="item", name="rocket-silo", amount=1}
+    },
+    auto_recycle = false,
+    allow_productivity = true,
+    enabled = false
+  },
+  {
+    type = "recipe",
+    name = "nanite-landing-pad",
+    icon = "__metal-and-stars-graphics-2__/graphics/icons/nano-cargo-landing-pad.png",
+    category = "nanotech",
+    subgroup = "space-nanites",
+    order = "c[lithium]-b[lithium-plate]",
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "nanites", amount = 150},
+    },
+    results = {
+      {type="item", name="cargo-landing-pad", amount=1}
+    },
+    auto_recycle = false,
+    allow_productivity = true,
+    enabled = false
+  },
+  {
+    type = "recipe",
+    name = "nanosubstation",
+    icon = "__metal-and-stars-graphics-2__/graphics/icons/nano-substation.png",
+    category = "nanotech",
+    subgroup = "space-nanites",
+    order = "c[lithium]-b[lithium-plate]",
+    energy_required = 6.4,
+    ingredients = {
+      {type = "item", name = "nanites", amount = 150},
+    },
+    results = {
+      {type="item", name="substation", amount=1}
     },
     auto_recycle = false,
     allow_productivity = true,

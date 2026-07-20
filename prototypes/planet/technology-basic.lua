@@ -86,6 +86,10 @@ data:extend({
             type = "unlock-recipe",
             recipe = "nanites"
           },
+          {
+            type = "unlock-recipe",
+            recipe = "nanite-melting"
+          },
         },
         prerequisites = {"planet-discovery-shipyard"},
         research_trigger =
@@ -116,7 +120,23 @@ data:extend({
             {
               type = "unlock-recipe",
               recipe = "nanite-cargo-bay"
-          },
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "nanite-furnace"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "nanite-silo"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "nanite-landing-pad"
+            },
+            {
+              type = "unlock-recipe",
+              recipe = "nanosubstation"
+            },
             {
               type = "unlock-recipe",
               recipe = "space-chest-ms"
