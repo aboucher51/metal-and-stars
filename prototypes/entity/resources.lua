@@ -413,7 +413,6 @@ local oil_driving_sound =
         tree_removal_max_distance = 32 * 32,
         minable =
         {
-          -- mining_particle = "mirandite" .. "-particle",
           mining_time = 1,
           fluid_amount = 10,
           required_fluid = "water",
@@ -479,8 +478,14 @@ local oil_driving_sound =
           {
             {
               type = "item",
+              name = "copper-plate",
+              probability = 0.25,
+              amount = 1
+            },
+            {
+              type = "item",
               name = "stone",
-              probability = 0.8,
+              probability = 0.5,
               amount = 1
             },
             {
@@ -581,6 +586,14 @@ local oil_driving_sound =
               type = "item",
               name = "bitumen",
               probability = 1,
+              amount = 1
+            },
+          },
+          {
+            {
+              type = "item",
+              name = "iron-ore",
+              probability = 0.2,
               amount = 1
             },
           },
